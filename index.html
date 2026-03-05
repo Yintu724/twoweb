@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="canonical" href="https://janyanculture.com/">
+  <title>janyanculture.com - 湛延文化 | 音乐·动漫·比赛</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <span class="logo-icon">♪</span>
+        <span class="logo-text">janyanculture.com</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#music">音乐</a></li>
+        <li><a href="#anime">动漫</a></li>
+        <li><a href="#competition">比赛</a></li>
+        <li><a href="#about">关于我们</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-login">登录</button>
+        <button class="btn-menu" aria-label="打开菜单">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 移动端菜单遮罩 -->
+  <div class="menu-overlay" aria-hidden="true"></div>
+  <aside class="menu-drawer">
+    <ul class="menu-drawer-list">
+      <li><a href="#music">音乐</a></li>
+      <li><a href="#anime">动漫</a></li>
+      <li><a href="#competition">比赛</a></li>
+      <li><a href="#about">关于我们</a></li>
+    </ul>
+    <button class="btn-login-drawer">登录</button>
+  </aside>
+
+  <!-- 首屏 Banner -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="sound-wave wave-1"></div>
+      <div class="sound-wave wave-2"></div>
+      <div class="sound-wave wave-3"></div>
+      <div class="sound-wave wave-4"></div>
+      <div class="sound-wave wave-5"></div>
+      <div class="sound-wave wave-6"></div>
+      <div class="ribbon ribbon-1"></div>
+      <div class="ribbon ribbon-2"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">湛延文化 · 让热爱不止于观看</h1>
+      <p class="hero-subtitle">探索音乐、动漫与竞技的无限可能，拥抱每一个热爱瞬间</p>
+      <a href="#music" class="btn-explore">立即探索</a>
+    </div>
+    <div class="hero-scroll">
+      <span>向下滚动</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- 音乐板块 -->
+  <section id="music" class="section section-music">
+    <div class="container">
+      <h2 class="section-title">音乐</h2>
+      <p class="section-desc">发现心动旋律，沉浸听觉盛宴</p>
+      <div class="music-grid">
+        <article class="music-card">
+          <div class="card-cover">
+            <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=400&h=400&fit=crop" alt="专辑封面">
+            <button class="play-btn" aria-label="播放">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <h3>夏日精选</h3>
+          <p>12 首热门单曲</p>
+        </article>
+        <article class="music-card">
+          <div class="card-cover">
+            <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop" alt="专辑封面">
+            <button class="play-btn" aria-label="播放">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <h3>电音派对</h3>
+          <p>8 首节奏旋律</p>
+        </article>
+        <article class="music-card">
+          <div class="card-cover">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop" alt="专辑封面">
+            <button class="play-btn" aria-label="播放">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <h3>治愈系歌单</h3>
+          <p>15 首温暖之声</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动漫板块 -->
+  <section id="anime" class="section section-anime">
+    <div class="container">
+      <h2 class="section-title">动漫</h2>
+      <p class="section-desc">二次元遇见现代，热爱永不褪色</p>
+      <div class="anime-grid">
+        <article class="anime-card anime-card-large">
+          <div class="anime-img">
+            <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=500&fit=crop" alt="动漫角色">
+          </div>
+          <div class="anime-overlay">
+            <h3>热门推荐</h3>
+            <p>人气角色集合</p>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="anime-img">
+            <img src="https://images.unsplash.com/photo-1541562232579-512a21360020?w=400&h=300&fit=crop" alt="动漫风格">
+          </div>
+          <div class="anime-overlay">
+            <h3>新番连载</h3>
+          </div>
+        </article>
+        <article class="anime-card">
+          <div class="anime-img">
+            <img src="https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?w=400&h=300&fit=crop" alt="动漫场景">
+          </div>
+          <div class="anime-overlay">
+            <h3>经典回顾</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 比赛板块 -->
+  <section id="competition" class="section section-competition">
+    <div class="container">
+      <h2 class="section-title">比赛</h2>
+      <p class="section-desc">赛程日历，等你来战</p>
+      <div class="competition-wrapper">
+        <div class="competition-calendar">
+          <div class="calendar-header">
+            <span>3 月赛事</span>
+          </div>
+          <ul class="event-list">
+            <li class="event-item">
+              <div class="event-date">
+                <span class="day">08</span>
+                <span class="month">3月</span>
+              </div>
+              <div class="event-info">
+                <h4>春季音乐大赛 预选赛</h4>
+                <p>14:00 · 线上直播</p>
+              </div>
+              <a href="#" class="btn-join">报名参赛</a>
+            </li>
+            <li class="event-item">
+              <div class="event-date">
+                <span class="day">15</span>
+                <span class="month">3月</span>
+              </div>
+              <div class="event-info">
+                <h4>动漫配音挑战赛</h4>
+                <p>19:00 · 线下+线上</p>
+              </div>
+              <a href="#" class="btn-join">报名参赛</a>
+            </li>
+            <li class="event-item">
+              <div class="event-date">
+                <span class="day">22</span>
+                <span class="month">3月</span>
+              </div>
+              <div class="event-info">
+                <h4>年度总决赛</h4>
+                <p>18:00 · 北京主场</p>
+              </div>
+              <a href="#" class="btn-join">报名参赛</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="section section-about">
+    <div class="container">
+      <h2 class="section-title">关于我们</h2>
+      <p class="section-desc">用热爱连接世界</p>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>我们的愿景</h3>
+          <p>我们相信，热爱是推动世界的动力。无论是音乐、动漫还是竞技，每一份热爱都值得被看见、被听见、被尊重。</p>
+          <p>我们致力于打造一个充满活力与创意的平台，让每一位用户都能在这里找到归属，让热爱不止于观看。</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">500万+</span>
+              <span class="stat-label">活跃用户</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100+</span>
+              <span class="stat-label">合作品牌</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">年度赛事</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="团队协作">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">♪</span>
+        <span>janyanculture.com 湛延文化</span>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="微信"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.512.512 0 01.193-.57C23.324 18.363 24 16.75 24 15.04c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.269-.027-.406-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z"/></svg></a>
+        <a href="#" aria-label="微博"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.098 19.482c-.394.093-.578-.189-.578-.42 0-.312.012-1.35.018-2.638 0-.545-.184-.899-.382-1.081 1.257-.145 2.577-.627 2.577-2.828 0-.624-.219-1.136-.574-1.538 0-.144-.249-.723.054-1.409 0 0 .468-.144 1.533.548.445-.124.922-.185 1.396-.188.473.003.951.064 1.396.188 1.066-.692 1.533-.548 1.533-.548.303.686.054 1.265.054 1.409-.356.401-.574.913-.574 1.538 0 2.201 1.318 2.682 2.577 2.828-.161.14-.306.384-.356.743-.32.143-1.131.392-1.635-.466 0 0-.298-.569-.773-.612 0 0-.492-.007-.034.307 0 0 .331.158.56.734 0 0 .294 1.012 1.752.746.019.463.028.928.028 1.388 0 .231-.184.514-.582.42-3.157-1.056-5.364-4.251-5.364-7.834 0-4.659 3.764-8.437 8.407-8.437 4.643 0 8.406 3.778 8.406 8.437 0 3.558-2.19 6.756-5.407 7.834z"/></svg></a>
+        <a href="#" aria-label="B站"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.813 4.653h.693c.585 0 1.058.473 1.058 1.058v12.576c0 .585-.473 1.058-1.058 1.058h-.693V4.653zm-4.186 0h.693v13.634h-.693V4.653zM3.473 5.71c-.585 0-1.058.474-1.058 1.059v10.463c0 .585.473 1.058 1.058 1.058h.693V5.71h-.693zm4.186 0v13.634h.694V5.71H7.659zm4.187 2.646c0 .585-.473 1.059-1.058 1.059H9.1v9.928c0 .585.473 1.058 1.058 1.058h.693V8.356zm4.186 0v8.812h.694V8.356h-.694zm4.187-3.703h.693v12.515h-.693V4.653z"/></svg></a>
+      </div>
+      <p class="footer-copyright">© 2025 janyanculture.com 湛延文化 版权所有</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
