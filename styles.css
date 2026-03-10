@@ -1131,6 +1131,12 @@ body.menu-open {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.music-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .music-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
@@ -1246,8 +1252,20 @@ body.menu-open {
   left: 0;
   right: 0;
   padding: 24px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
   color: var(--white);
+  cursor: pointer;
+}
+
+.anime-overlay::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.62));
+  pointer-events:none;
+}
+
+.anime-overlay > *{
+  position: relative;
 }
 
 .anime-overlay h3 {
@@ -1258,6 +1276,66 @@ body.menu-open {
 .anime-overlay p {
   font-size: 0.9rem;
   opacity: 0.9;
+}
+
+.anime-card-split .anime-media-link{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+}
+
+.anime-text-link{
+  color: inherit;
+  text-decoration: none;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.anime-text-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.anime-text-link:focus-visible{
+  outline: 2px solid rgba(255,255,255,.92);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
+.anime-overlay-actions{
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  pointer-events: auto;
+}
+.anime-chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration:none;
+  font-weight: 700;
+  font-size: .92rem;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(0,0,0,.22);
+  backdrop-filter: blur(8px);
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+  pointer-events: auto;
+}
+.anime-chip:hover{
+  transform: translateY(-1px);
+  background: rgba(0,0,0,.28);
+  border-color: rgba(255,255,255,.42);
+}
+.anime-chip:focus-visible{
+  outline: 2px solid rgba(255,255,255,.92);
+  outline-offset: 3px;
+}
+.anime-chip-ghost{
+  background: rgba(255,255,255,.14);
 }
 
 /* ===== 比赛板块 ===== */

@@ -1,0 +1,248 @@
+/* 歌单页专属样式 */
+.playlist-main {
+  padding: 100px 0 80px;
+  min-height: 100vh;
+}
+
+.playlist-header {
+  display: flex;
+  gap: 32px;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.playlist-cover {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg, 20px);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg, 0 12px 40px rgba(230, 126, 34, 0.18));
+  flex-shrink: 0;
+}
+
+.playlist-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playlist-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.playlist-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--orange-light, #FFEAA7);
+  color: var(--orange-deep, #D35400);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.playlist-info h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--gray-800, #2C2419);
+  margin: 0 0 8px;
+}
+
+.playlist-info p {
+  color: var(--gray-600, #6B5B4F);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.track-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: var(--radius-lg, 20px);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow-md, 0 4px 16px rgba(230, 126, 34, 0.12));
+}
+
+.track-item {
+  display: grid;
+  grid-template-columns: 44px 36px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gray-200, #F5E6D3);
+  transition: background 0.2s;
+}
+
+.track-item:last-child {
+  border-bottom: none;
+}
+
+.track-item:hover {
+  background: var(--gray-50, #FFFBF5);
+}
+
+.track-item.playing {
+  background: linear-gradient(90deg, rgba(255, 159, 67, 0.15), transparent);
+}
+
+.track-item.playing .track-num {
+  opacity: 0;
+}
+
+.track-item.playing .track-play {
+  opacity: 1;
+}
+
+.track-play {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--orange, #FF9F43);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+
+.track-play:hover {
+  transform: scale(1.05);
+  background: var(--orange-dark, #E67E22);
+}
+
+.track-play svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+}
+
+.track-item.playing .track-play {
+  background: var(--orange-deep, #D35400);
+}
+
+.track-item.playing .track-play svg {
+  display: none;
+}
+
+.track-item.playing .track-play::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  clip-path: inset(0 58% 0 0);
+  box-shadow: 8px 0 0 currentColor;
+}
+
+.track-num {
+  font-size: 1rem;
+  color: var(--gray-600, #6B5B4F);
+  font-weight: 600;
+  text-align: center;
+}
+
+.track-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.track-title {
+  font-weight: 600;
+  color: var(--gray-800, #2C2419);
+  font-size: 1rem;
+}
+
+.track-artist {
+  font-size: 0.9rem;
+  color: var(--gray-600, #6B5B4F);
+}
+
+.track-duration {
+  font-size: 0.9rem;
+  color: var(--gray-600, #6B5B4F);
+  font-variant-numeric: tabular-nums;
+}
+
+.playlist-credit {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: var(--gray-600, #6B5B4F);
+}
+
+.playlist-credit a {
+  color: var(--orange-deep, #D35400);
+  text-decoration: none;
+}
+
+.playlist-credit a:hover {
+  text-decoration: underline;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  background: var(--gray-100, #FEF5EB);
+  color: var(--orange-deep, #D35400);
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-back:hover {
+  background: var(--orange-light, #FFEAA7);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .playlist-main {
+    padding: 90px 0 48px;
+  }
+
+  .playlist-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .playlist-cover {
+    width: 180px;
+    height: 180px;
+  }
+
+  .track-item {
+    grid-template-columns: 40px 28px 1fr auto;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  .track-play {
+    width: 40px;
+    height: 40px;
+  }
+
+  .track-play svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .track-title {
+    font-size: 0.95rem;
+  }
+
+  .track-artist {
+    font-size: 0.85rem;
+  }
+
+  .btn-back {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

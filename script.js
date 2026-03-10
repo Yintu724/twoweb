@@ -98,6 +98,7 @@
     loginBtns.forEach((btn) => btn.addEventListener("click", () => toast("登录功能待接入")));
 
     $$(".play-btn").forEach((btn) => {
+      if (btn.closest(".music-card-link")) return;
       btn.addEventListener("click", (e) => {
         e.preventDefault();
         toast("示例页面：播放功能待接入");
@@ -129,12 +130,26 @@
     });
   };
 
+  const setupAnimeSplitCards = () => {
+    // 动漫卡片：点击遮罩空白处也跳转到“文字页面”
+    $$(".anime-card-split .anime-overlay").forEach((ov) => {
+      ov.addEventListener("click", (e) => {
+        const t = e.target;
+        if (t && t.closest && t.closest("a")) return;
+        const link = $(".anime-text-link", ov);
+        if (!link) return;
+        window.location.href = link.getAttribute("href");
+      });
+    });
+  };
+
   const init = () => {
     ensureAria();
     setupHeaderShadow();
     setupMenuEvents();
     setupActionHints();
     setupSmoothAnchorsOffset();
+    setupAnimeSplitCards();
   };
 
   if (document.readyState === "loading") {

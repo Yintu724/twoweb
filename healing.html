@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>治愈系歌单 - janyanculture.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="playlist.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">♪</span>
+        <span class="logo-text">janyanculture.com</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html#music">音乐</a></li>
+        <li><a href="index.html#anime">动漫</a></li>
+        <li><a href="index.html#competition">比赛</a></li>
+        <li><a href="index.html#about">关于我们</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html#music" class="btn-back">← 返回音乐区</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="playlist-main playlist-healing">
+    <div class="container">
+      <div class="playlist-header">
+        <div class="playlist-cover">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=400&fit=crop" alt="治愈系歌单">
+        </div>
+        <div class="playlist-info">
+          <span class="playlist-tag">歌单</span>
+          <h1>治愈系歌单</h1>
+          <p>5 首温暖之声，抚慰心灵</p>
+        </div>
+      </div>
+
+      <ul class="track-list">
+        <li class="track-item" data-src="https://www.silvermansound.com/wp-content/uploads/dawns-break.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">1</span>
+          <div class="track-meta">
+            <span class="track-title">Dawn's Break 破晓</span>
+            <span class="track-artist">Shane Ivers / Silverman Sound</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.scottbuckley.com.au/library/wp-content/uploads/2024/11/WinterWaltz.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">2</span>
+          <div class="track-meta">
+            <span class="track-title">Winter Waltz 冬之华尔兹</span>
+            <span class="track-artist">Scott Buckley</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.scottbuckley.com.au/library/wp-content/uploads/2024/06/Hyperion.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">3</span>
+          <div class="track-meta">
+            <span class="track-title">Hyperion 许珀里翁</span>
+            <span class="track-artist">Scott Buckley</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">4</span>
+          <div class="track-meta">
+            <span class="track-title">静谧时光</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">5</span>
+          <div class="track-meta">
+            <span class="track-title">温柔絮语</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <audio id="player" preload="metadata"></audio>
+  <script src="playlist.js"></script>
+</body>
+</html>

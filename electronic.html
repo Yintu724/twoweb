@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>电音派对 - janyanculture.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="playlist.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">♪</span>
+        <span class="logo-text">janyanculture.com</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html#music">音乐</a></li>
+        <li><a href="index.html#anime">动漫</a></li>
+        <li><a href="index.html#competition">比赛</a></li>
+        <li><a href="index.html#about">关于我们</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html#music" class="btn-back">← 返回音乐区</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="playlist-main playlist-electronic">
+    <div class="container">
+      <div class="playlist-header">
+        <div class="playlist-cover">
+          <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop" alt="电音派对">
+        </div>
+        <div class="playlist-info">
+          <span class="playlist-tag">歌单</span>
+          <h1>电音派对</h1>
+          <p>5 首节奏旋律，燃爆全场</p>
+        </div>
+      </div>
+
+      <ul class="track-list">
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">1</span>
+          <div class="track-meta">
+            <span class="track-title">Chill-out Acid Squeeze</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">2</span>
+          <div class="track-meta">
+            <span class="track-title">The Stationary Ark - Arctic Clubmix</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">3</span>
+          <div class="track-meta">
+            <span class="track-title">电子脉冲</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">4</span>
+          <div class="track-meta">
+            <span class="track-title">节奏风暴</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+        <li class="track-item" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3">
+          <button class="track-play" aria-label="播放" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          <span class="track-num">5</span>
+          <div class="track-meta">
+            <span class="track-title">霓虹之夜</span>
+            <span class="track-artist">SoundHelix</span>
+          </div>
+          <span class="track-duration">—:—</span>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <audio id="player" preload="metadata"></audio>
+  <script src="playlist.js"></script>
+</body>
+</html>
